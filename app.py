@@ -10,12 +10,12 @@ app = Flask(__name__)
 def home():
     return '''Safe forum'''
 
-@app.route('/predict/<string:txt>',methods=['GET'])
-def predict(txt):
+@app.route('/predict/',methods=['GET']) #<string:txt>
+def predict():
     '''
     For rendering results on HTML GUI
     '''
-
+    txt = "Fuck"
     # str_features = request.form.values()
     pf = ProfanityFilter()
     # postStr = list(str_features)
