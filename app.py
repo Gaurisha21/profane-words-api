@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 from profanity_filter import ProfanityFilter
 import spacy
+npl = spacy.load('en')
 # import en_core_web_sm
 # nlp = en_core_web_sm.load()
 
