@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 from profanity_filter import ProfanityFilter
+import spacy
 
 app = Flask(__name__)
 
